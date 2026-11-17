@@ -1,0 +1,257 @@
+
+/* 1. Pengaturan umum */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #49383f;
+  line-height: 1.6;
+  background-color: #FAFFCB;
+  background-image: radial-gradient(
+    rgba(241, 62, 147, 0.35) 2px,
+    transparent 2px
+  );
+  background-size: 35px 35px;
+}
+
+/* 2. Header dan menu */
+header {
+  background-color: #F13E93;
+  color: white;
+  text-align: center;
+  padding: 25px 16px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 38px;
+  color: white;
+}
+
+/* Tulisan A LITTLE BITE */
+.tagline {
+  color: #FAFFCB;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin: 5px 0;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 12px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #FAFFCB;
+}
+
+/* 3. Isi halaman */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+section {
+  background-color: #fffafa;
+  border: 1px solid #F9D0CD;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 24px 0;
+}
+
+h2 {
+  color: #D92F80;
+  border-bottom: 3px solid #F891BB;
+  padding-bottom: 8px;
+}
+
+h3 {
+  color: #D94C8B;
+  margin-top: 20px;
+}
+
+p {
+  color: #49383f;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* 4. Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #F9D0CD;
+  padding: 10px;
+  text-align: left;
+  color: #49383f;
+}
+
+th {
+  background-color: #F891BB;
+  color: #49383f;
+}
+
+tr:nth-child(even) {
+  background-color: #FFF0F5;
+}
+
+/* 5. Promo */
+.promo {
+  background-color: #F9D0CD;
+  text-align: center;
+}
+
+.promo p {
+  margin-bottom: 20px;
+}
+
+.tombol {
+  display: inline-block;
+  background-color: #F13E93;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.tombol:hover {
+  background-color: #D92F80;
+}
+
+/* 6. Testimoni */
+.testimoni {
+  background-color: #FFF0F5;
+  border-left: 4px solid #F13E93;
+  padding: 12px 18px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.testimoni p {
+  font-style: italic;
+  color: #49383f;
+}
+
+/* 7. Form */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #F891BB;
+  border-radius: 6px;
+  font-family: inherit;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  background-color: white;
+  color: #49383f;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #8a747d;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #F13E93;
+}
+
+button {
+  background-color: #F13E93;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #D92F80;
+}
+
+/* 8. Tombol WhatsApp */
+.tombol-wa {
+  display: inline-block;
+  background-color: #25a95b;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+}
+
+.tombol-wa:hover {
+  background-color: #188747;
+}
+
+/* 9. Footer */
+footer {
+  background-color: #F13E93;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+}
+
+footer p {
+  color: white;
+}
+
+/* 10. Tampilan HP */
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  .tagline {
+    font-size: 13px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  section {
+    padding: 18px;
+    margin: 15px 0;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  th, td {
+    padding: 7px;
+  }
+}
